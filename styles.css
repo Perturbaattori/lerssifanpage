@@ -127,7 +127,6 @@ body {
 }
 
 .container img {
-  position: static;
   height: 90%;
   width: 90%;
   object-fit: cover;
@@ -165,4 +164,32 @@ body {
 .large-square:hover {
   background-color: red;
   width: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-block {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  #overlay img {
+    width: 250px;
+    height: 250px;
+    transform: translate(-125px, -125px);
+  }
+
+  #overlay img:hover {
+    transform: translate(-125px, -125px) scale(1.2);
+  }
+
+  #overlay p {
+    top: 70%;
+    left: 50%;
+    color: #444;
+    width: 60%;
+  }
 }
